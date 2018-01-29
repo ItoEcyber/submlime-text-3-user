@@ -1,0 +1,8 @@
+{
+	"format_on_save": true,
+	"option": "value",
+	"php_bin": "/Users/ito/.phpbrew/php/php-7.1.4/bin/php",
+	"psr1": true,
+	"psr2": true,
+	"version": 4
+}

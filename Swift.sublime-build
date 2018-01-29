@@ -1,0 +1,7 @@
+{
+    "cmd": ["xcrun -sdk macosx swift $file_name"],
+    "file_regex": "^(...*?):([0-9]*):?([0-9]*)",
+    "path": "/usr/bin/",
+    "selector": "source.swift",
+    "shell": true
+}

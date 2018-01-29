@@ -1,0 +1,14 @@
+// [PackageDev] target_format: plist, ext: tmLanguage
+    { "name": "md5verified",
+  "scopeName": "source.md5verified",
+  "fileTypes": ["md5verified"],
+  "uuid": "f9c56399-584d-4e16-9ef1-d4e61daff94d",
+
+  "patterns": [
+        {
+        "match" : ".+ FAILED",
+        "name" : "keyword.source.md5verified",
+        "comment" : "hoge"
+    }
+  ]
+}

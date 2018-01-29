@@ -1,0 +1,97 @@
+[
+	{
+		"keys": ["ctrl+e", "ctrl+o"],
+		"command": "open_evernote_note"
+	},
+	{
+		"keys": ["ctrl+e", "ctrl+s"],
+		"command": "send_to_evernote"
+	},
+	{
+		"keys": ["ctrl+e", "ctrl+u"],
+		"command": "save_evernote_note"
+	},
+	{
+		"keys": ["ctrl+s"],
+		"command": "save_evernote_note",
+		"context": [
+			{"key": "evernote_has_guid"},
+			{"key": "evernote_note"}
+		]
+	},
+	{
+		"keys": ["ctrl+s"],
+		"command": "send_to_evernote",
+		"context": [
+			{"operand": false, "operator": "equal", "key": "evernote_has_guid"},
+			{"key": "evernote_note"}
+		]
+	},
+	{
+		"keys": ["ctrl+shift+j"],
+		"command": "select_lines", "args": {"forward": true}
+	},
+	{
+		"keys": ["ctrl+shift+k"],
+		"command": "select_lines", "args": {"forward": false}
+	},
+	{
+		"keys": ["ctrl+shift+s"],
+		"command": "markdowntoc_update"
+	},
+	{
+		"keys": ["shift+enter"],
+		"command": "commit_completion",
+		"context": [
+			{"key": "auto_complete_visible"},
+			{"operand": false, "key": "setting.auto_complete_commit_on_tab"}
+		]
+	},
+	{
+		"keys": ["shift+enter"],
+		"command": "run_macro_file", "args": {"file": "res://Packages/Default/Add Line in Braces.sublime-macro"},
+		"context": [
+			{"match_all": true, "operand": "^\\}", "operator": "regex_contains", "key": "following_text"},
+			{"match_all": true, "operand": "\\{$", "operator": "regex_contains", "key": "preceding_text"},
+			{"match_all": true, "operand": true, "operator": "equal", "key": "selection_empty"},
+			{"operand": true, "operator": "equal", "key": "setting.auto_indent"}
+		]
+	},
+	{
+		"keys": ["shift+enter"],
+		"command": "insert_snippet", "args": {"contents": "\n\t$0\n"},
+		"context": [
+			{"match_all": true, "operand": true, "operator": "equal", "key": "selection_empty"},
+			{"match_all": true, "operand": "meta.scope.between-tag-pair", "operator": "equal", "key": "selector"},
+			{"operand": true, "operator": "equal", "key": "setting.auto_indent"}
+		]
+	},
+	{
+		"keys": ["shift+enter"],
+		"command": "find_next",
+		"context": [
+			{"operand": "find", "key": "panel"},
+			{"key": "panel_has_focus"}
+		]
+	},
+	{
+		"keys": ["shift+enter"],
+		"command": "find_next",
+		"context": [
+			{"operand": "replace", "key": "panel"},
+			{"key": "panel_has_focus"}
+		]
+	},
+	{
+		"keys": ["shift+enter"],
+		"command": "hide_panel",
+		"context": [
+			{"operand": "incremental_find", "key": "panel"},
+			{"key": "panel_has_focus"}
+		]
+	},
+	{
+		"keys": ["super+e"],
+		"command": "show_overlay", "args": {"text": "Evernote: ", "overlay": "command_palette"}
+	}
+]

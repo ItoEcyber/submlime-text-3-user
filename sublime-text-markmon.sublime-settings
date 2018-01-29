@@ -1,0 +1,7 @@
+{
+    "executable": "markmon",
+    "port": 3002,
+    "command": "pandoc -t HTML5 --mathjax",
+    "stylesheet": "github-markdown.css",
+    "projectdir": null
+}

@@ -1,0 +1,22 @@
+{
+	"code_friendly": true,
+	"code_highlighting_style": "github",
+	"debug": true,
+	"emphasis_mark": "_",
+	"evernote_autocomplete": true,
+	"gfm_tables": true,
+	"item_mark": "-",
+	"max_notes": 100,
+	"noteStoreUrl": "https://www.evernote.com/shard/s51/notestore",
+	"notes_order": "updated",
+	"open_single_result": true,
+	"show_stacks": true,
+	"sort_notebooks": false,
+	"strong_mark": "**",
+	"tab_prefix": "Evernote: ",
+	"tab_size": 4,
+	"token": "S=s51:U=53fa9d:E=166195a7b34:C=15ec1a94ea0:P=1cd:A=en-devtoken:V=2:H=0d23fc62c7a81bec0a30ab4d0da7619f",
+	"update_on_save": true,
+	"warn_on_close": true,
+	"wiki_tables": false
+}

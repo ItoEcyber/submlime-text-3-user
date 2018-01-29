@@ -1,0 +1,7 @@
+{
+  "default_autoanchor": true,
+  "default_autolink": true,
+  "default_lowercase_only_ascii": true,
+  "default_bracket": "round",
+  "default_depth": 3
+}

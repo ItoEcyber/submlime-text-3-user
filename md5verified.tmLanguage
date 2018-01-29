@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>md5verified</string>
+	</array>
+	<key>name</key>
+	<string>md5verified</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>comment</key>
+			<string>hoge</string>
+			<key>match</key>
+			<string>.+ FAILED</string>
+			<key>name</key>
+			<string>keyword.source.md5verified</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.md5verified</string>
+	<key>uuid</key>
+	<string>f9c56399-584d-4e16-9ef1-d4e61daff94d</string>
+</dict>
+</plist>
