@@ -25,6 +25,10 @@
 		"Dockerfile Syntax Highlighting",
 		"Dotfiles Syntax Highlighting",
 		"EditorConfig",
+		"Elixir",
+		"ElixirFormatter",
+		"ElixirSublime",
+		"ElixirSyntax",
 		"Emoji Code",
 		"Evernote",
 		"Extract Sublime Package",
@@ -45,6 +49,7 @@
 		"JsonTree",
 		"Keymap Redefiner",
 		"Keymaps",
+		"LDIF Syntax Highlighting",
 		"Markdown Extended",
 		"MarkdownFootnotes",
 		"Monokai Extended",
@@ -69,7 +74,8 @@
 		"Table Editor",
 		"Theme - Cobalt2",
 		"TodoReview",
-		"TrailingSpaces"
+		"TrailingSpaces",
+		"VueFormatter"
 	],
 	"repositories":
 	[

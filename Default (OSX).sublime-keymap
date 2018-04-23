@@ -23,7 +23,7 @@
 		"keys": ["ctrl+s"],
 		"command": "send_to_evernote",
 		"context": [
-			{"operand": false, "operator": "equal", "key": "evernote_has_guid"},
+			{"operator": "equal", "operand": false, "key": "evernote_has_guid"},
 			{"key": "evernote_note"}
 		]
 	},
@@ -51,19 +51,19 @@
 		"keys": ["shift+enter"],
 		"command": "run_macro_file", "args": {"file": "res://Packages/Default/Add Line in Braces.sublime-macro"},
 		"context": [
-			{"match_all": true, "operand": "^\\}", "operator": "regex_contains", "key": "following_text"},
-			{"match_all": true, "operand": "\\{$", "operator": "regex_contains", "key": "preceding_text"},
-			{"match_all": true, "operand": true, "operator": "equal", "key": "selection_empty"},
-			{"operand": true, "operator": "equal", "key": "setting.auto_indent"}
+			{"operator": "regex_contains", "match_all": true, "operand": "^\\}", "key": "following_text"},
+			{"operator": "regex_contains", "match_all": true, "operand": "\\{$", "key": "preceding_text"},
+			{"operator": "equal", "match_all": true, "operand": true, "key": "selection_empty"},
+			{"operator": "equal", "operand": true, "key": "setting.auto_indent"}
 		]
 	},
 	{
 		"keys": ["shift+enter"],
 		"command": "insert_snippet", "args": {"contents": "\n\t$0\n"},
 		"context": [
-			{"match_all": true, "operand": true, "operator": "equal", "key": "selection_empty"},
-			{"match_all": true, "operand": "meta.scope.between-tag-pair", "operator": "equal", "key": "selector"},
-			{"operand": true, "operator": "equal", "key": "setting.auto_indent"}
+			{"operator": "equal", "match_all": true, "operand": true, "key": "selection_empty"},
+			{"operator": "equal", "match_all": true, "operand": "meta.scope.between-tag-pair", "key": "selector"},
+			{"operator": "equal", "operand": true, "key": "setting.auto_indent"}
 		]
 	},
 	{
